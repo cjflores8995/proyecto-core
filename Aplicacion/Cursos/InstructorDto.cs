@@ -8,6 +8,7 @@ namespace Aplicacion.Cursos
         public string Nombre { get; set; }
         public string Apellidos { get; set; }
         public string Grado { get; set; }
+        public DateTime? FechaPublicacion {get; set;}
         public byte[] FotoPerfil { get; set; }
     }
 }

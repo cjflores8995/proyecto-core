@@ -42,7 +42,8 @@ namespace Aplicacion.Comentarios
                     ComentarioId = Guid.NewGuid(),
                     Alumno = request.Alumno,
                     ComentarioTexto = request.Comentario,
-                    CursoId = request.CursoId
+                    CursoId = request.CursoId,
+                    FechaCreacion = DateTime.UtcNow.AddHours(-5)
                 };
 
                 _context.Comentario.Add(comentario);

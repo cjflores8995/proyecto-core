@@ -47,7 +47,8 @@ namespace Aplicacion.Cursos
                     CursoId = _cursoId,
                     Titulo = request.Titulo,
                     Descripcion = request.Descripcion,
-                    FechaPublicacion = request.FechaPublicacion
+                    FechaPublicacion = request.FechaPublicacion,
+                    FechaCreacion = DateTime.UtcNow.AddHours(-5)
                 };
 
                 _context.Curso.Add(curso);
